@@ -1,0 +1,1179 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Box Sizing css */
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 35px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #0d1731;
+    padding-bottom: 26px;
+}
+.heading p{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+    color: #0d1731;
+    max-width: 913px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* header css start 
+======================*/
+header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+header::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    padding: 71px 283.5px;
+    border-radius: 17px;
+    top: -18px;
+    left: -22px;
+    z-index: -2;
+    opacity: 0.75;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 34px;
+}
+.header-menu ul,
+.banner-button{
+    display: flex;
+    gap: 47px;
+}
+.header-menu ul li a,
+.header-button a,
+.banner-button a,
+.approach-content-button a,
+.consultant-expert-button a{
+    font-size: 16px;
+    line-height: 14.4px;
+    font-weight: 700;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+.header-menu ul li a:hover{
+    color: #0a3474;
+}
+.header-button a,
+.banner-button a,
+.approach-content-button a,
+.consultant-expert-button a{
+    font-size: 18px;
+    color: #0a3474;
+    background-color: #fff;
+    padding: 20.5px 51.7px;
+    border-radius: 5px;
+}
+.header-button a:hover,
+.banner-button a:hover{
+    color: #fff;
+    background-color: #0a3474;
+}
+/* header css end 
+===================*/
+
+/* banner section css start 
+=============================*/
+.banner-section{
+    position: relative;
+    background-image: url(../ibl-image/banner-bg-image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 0;
+    padding: 275px 0 188px 0;
+}
+.banner-content{
+    width: 57%;
+    display: inline-block;
+}
+.banner-content h3,
+.banner-content p{
+    font-size: 75px;
+    line-height: 85px;
+    font-weight: 700;
+    color: #0a3474;
+}
+.banner-content p{
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: normal;
+    padding: 55px 24px 63px 0;
+}
+.banner-button a:last-child,
+.approach-content-button a{
+    color: #fff;
+    background-color: #0a3474;
+    padding: 20.5px 46.5px
+}
+.banner-button a:last-child:hover{
+    color: #0a3474;
+    background-color: #fff;
+}
+.banner-button{
+    gap: 15px;
+}
+/* banner section css end 
+===========================*/
+
+/* our-approach-section css start
+=================================== */
+.our-approach-section{
+    padding: 110px 0 100px 0;
+}
+.approach-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin-top: 50px;
+}
+.approach-content-left{
+    width: 50%;
+    display: inline-block;
+    text-align: center ;
+}
+.approach-content-left h3{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #0d1731;
+    padding: 0 13px 42px 13px;
+}
+.approach-content-button a{
+    line-height: 45px;
+    padding: 5px 49px;
+}
+.approach-content-button a:hover{
+    color: #0a3474;
+    border: 1px dashed #0a3474;
+    background: none;
+}
+.approach-content-left h4,
+.approach-content-right ul li{
+    font-size: 16px;
+    line-height: 45px;
+    font-weight: normal;
+    color: #0d1731;
+    padding: 31px 0 0 0;
+}
+.approach-content-right{
+    width: 50%;
+    float: right;
+    background-color: #f26f30;
+    border-radius: 10px;
+    padding: 36px 29px 39px 29px;
+}
+.approach-content-right ul li,
+.approach-content-right-arrow p{
+    line-height: 35px;
+    letter-spacing: 0.2px;
+    color: #fff;
+    padding: 0;
+}
+.approach-content-bottom{
+    background-color: #0a3474;
+    padding: 10px 0;
+}
+.approach-content-right-line{
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+/* our-approach-section css end
+=================================== */
+
+/* consultant-expert-section css start
+========================================*/
+.consultant-expert-section{
+    background-color: #0a3474;
+    padding: 25px 0 21px 0;
+}
+.consultant-expert-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.consultant-expert-logo{
+    width: 4%;
+}
+.consultant-expert-name{
+    width: 28%;
+    text-align: center;
+}
+.consultant-expert-content{
+    width: 50%;
+}
+.consultant-expert-button{
+    width: 18%;
+}
+.consultant-expert-name h4{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    color: #f26f30;
+    letter-spacing: 0.2px;
+    font-family: none;
+}
+.consultant-expert-name p{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #879dbf;
+}
+.consultant-expert-content h3{
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.2px;
+}
+.consultant-expert-content span{
+    color: #879dbf;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.consultant-expert-button a:hover{
+    background-color: #879dbf;
+    color: #fff;
+}
+/* consultant-expert-section css end
+========================================*/
+
+/* our-service-section css start
+=================================== */
+.our-service-section,
+.development-section,
+.technology-section{
+    padding: 105px 0 100px 0;
+}
+.service-info-ilst-top,
+.service-info-ilst-bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 77px 0 115px 0;
+}
+.service-info-ilst-bottom{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 200px;
+}
+.serivce-info-box{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px 46px 42px 30px;
+}
+.serivce-box-image{
+    position: absolute;
+    top: -43px;
+    right: 46px;
+}
+.serivce-box-content a{
+    position: absolute;
+    right: 30px;
+}
+.serivce-box-content h3{
+    font-size: 28px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: #0d1731;
+}
+.serivce-box-content h4{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #0d1731;
+}
+.serivce-box-content p{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    color: #0d1731;
+    padding: 10px 0 0 0;
+}
+/* our-service-section css end
+=================================== */
+
+/* some-brands-section css start
+==================================== */
+.some-brands-section{
+    padding: 105px 0 98px 0;
+    background-color: #e8ebf1;
+}
+.some-brands-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding-top: 27px;
+}
+/* some-brands-section css end
+==================================== */
+
+/* development-section css start
+================================== */
+.development-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-top: 35px;
+}
+.development-list-box{
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 50px 0;
+}
+.development-box-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 36px;
+}
+.development-box-heading h3{
+    font-size: 26px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #0d1731;
+}
+.development-box-info p,
+.development-box-info-last-child p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #0d1731;
+    padding: 36px 0 0 0;
+    letter-spacing: 0.2px;
+    padding: 0 36px 0 37px;
+}
+.development-box-info-last-child p{
+    padding: 0 31px 0 38px !important;
+}
+/* development-section css end
+================================== */
+
+/* technology-section css start 
+===================================*/
+.technology-section{
+    background-color: #e8ebf1;
+}
+.technolog-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 74px !important;
+    padding: 35px 0 52px 0;
+}
+.technolog-menu ul li a{
+    font-size: 26px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #0d1731;
+    transition: all 0.2s;
+    padding-bottom: 13px;
+}
+.technolog-menu ul li a:hover,
+.tab-active a{
+    font-weight: 700;
+    border-bottom: 2px solid #f26f30;
+}
+.tabs-stage{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+.technolog-list-box-image{
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+/* technology-section css end 
+===================================*/
+
+/* solution-section css start
+================================== */
+.solution-section{
+    background-image: url(../ibl-image/Solution-bg-image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 105px 0 118px 0;
+}
+.solution-section .heading h2{
+    color: #fff;
+}
+.solution-info-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 70px;
+    padding: 24px 0 0 0;
+}
+.solution-list-box{
+    text-align: center;
+}
+.solution-list-box-detils h3{
+    font-size: 22px;
+    line-height: normal;
+    font-weight: 700;
+    color: #fff;
+}
+.solution-list-box-detils p{
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: normal;
+    color: #fff;
+    padding: 10px 8px 0 10px;
+}
+/* solution-section css end
+================================== */
+
+/* customer-section css start
+================================ */
+.customer-section{
+    padding: 108px 0 100px 0;
+}
+.customer-section-info{
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+.customer-content-left{
+    width: 58%;
+}
+.customer-content-right{
+    width: 42%;
+}
+.customer-content-right h3{
+    font-size: 34px;
+    line-height: normal;
+    font-weight: 700;
+    padding: 0 162px 0 0;
+}
+.customer-content-right p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    padding: 22px 47px 0 0;
+}
+/* customer-section css end
+================================ */
+
+/* footer-section css start 
+================================ */
+.footer-section{
+    background-color: #0a3474;
+    padding: 93px 0 100px 0;
+}
+.footer-info{
+    display: inline-block;
+    padding-bottom: 39px;
+}
+.footer-details{
+    width: 52%;
+    float: left;
+}
+.footer-menu,
+.footer-blog{
+    width: 25%;
+    display: inline-block;
+}
+.footer-blog{
+    width: 23%;
+    float: right;
+}
+.footer-details p{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 132px 27px 0;
+}
+.footer-details-newsletter{
+    position: relative;
+}
+.footer-details-newsletter input{
+    padding: 19px 173px 19px 25px;
+    border-radius: 5px;
+    border: 0;
+}
+.footer-details-newsletter input::-webkit-input-placeholder{
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: normal;
+    color: #8b8b8b;
+}
+.footer-details-newsletter input::-moz-placeholder{
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: normal;
+    color: #8b8b8b;
+}
+.footer-details-newsletter input:-ms-input-placeholder{
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: normal;
+    color: #8b8b8b;
+}
+.footer-details-newsletter input:-moz-placeholde{
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: normal;
+    color: #8b8b8b;
+}
+.footer-details-newsletter a{
+    background-color: #f16e2d;
+    padding: 18.5px 20px;
+    position: absolute;
+    left: 312px;
+    top: 43px;
+    border-radius: 0px 5px 5px 0;
+}
+.footer-details-newsletter a:hover{
+    background-color: #e45d1a;
+}
+.footer-details-newsletter h3{
+    padding-bottom: 14px;
+}
+.footer-menu-heading h3{
+    padding-bottom: 9px;
+}
+.footer-blog-heading h3{
+    padding-bottom: 20px;
+}
+.footer-menu-heading h3,
+.footer-blog-heading h3,
+.footer-details-newsletter h3{
+    font-size: 22px;
+    line-height: normal;
+    font-weight: 700;
+    color: #fff;
+}
+.footer-menu ul li a,
+.footer-blog-content a{
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #879dbf;
+    transition: all 0.3s;
+}
+.footer-menu ul li a:hover,
+.footer-blog-content a:hover{
+    color: #fff;
+}
+.footer-blog-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer-blog-content a{
+    line-height: normal;
+}
+.copyright-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright-media-icon ul{
+    display: flex;
+    gap: 25px;
+}
+.copyright-line h3,
+.copyright-line h3 a,
+.copyright-email a,
+.copyright-media-icon a i{
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #FFF;
+}
+.copyright-line h3 a:hover,
+.copyright-email a:hover,
+.copyright-media-icon a i:hover{
+    color:#879dbf;
+}
+.copyright-email a{
+    padding: 0 38px;
+}
+.copyright-email a:last-child{
+    border-left: 2px solid #fff;
+}
+.copyright-media-icon a i{
+    font-size: 22px;
+}
+/* footer-section css end 
+================================ */
+@media screen and (max-width:1500px) {
+    header::before{
+        left: -252px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .header-menu ul{
+        gap: 37px;
+    }
+    header::before {
+        left: -388px;
+    }
+    .banner-section {
+        padding: 185px 0 138px 0;
+    }
+    .banner-content{
+        width: 65%;
+    }
+    .banner-content h3 {
+        font-size: 64px;
+    }
+    .banner-content p {
+        padding: 25px 20px 50px 0;
+    }
+    .our-approach-section {
+        padding: 80px 0 90px 0;
+    }
+    .approach-content{
+        gap: 20px;
+    }
+    .consultant-expert-section{
+        padding: 30px 0;
+    }
+    .consultant-expert-info{
+        flex-direction: column;
+    }
+    .consultant-expert-logo, .consultant-expert-name, .consultant-expert-content, .consultant-expert-button{
+        width: auto;
+    }
+    .consultant-expert-content h3{
+        padding: 15px 0 20px 0;
+    }   
+    .our-service-section, .some-brands-section, .development-section, .technology-section, .solution-section, .customer-section{
+        padding: 75px 0 90px 0;
+    }
+    .service-info-ilst-top {
+        gap: 20px;
+        padding: 57px 0 95px 0;
+    }
+    .service-info-ilst-bottom {
+        gap: 20px;
+        padding: 0 170px;
+    }
+    .serivce-box-content a {
+        bottom: 25px;
+    }
+    .some-brands-list {
+        gap: 25px;
+    }
+    .some-brands-list{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .tabs-stage{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .solution-info-list {
+        gap: 30px 60px;
+    }
+    .customer-section-info {
+        padding-top: 60px;
+    }
+    .customer-content-right h3{
+        padding: 0 122px 0 0;
+    }
+    .footer-section{
+        padding: 83px 0 80px 0;
+    }
+    .footer-details p{
+        padding: 0 56px 27px 0;
+    }
+}
+@media screen and (max-width:991px) {
+    nav {
+        position: relative;
+        background: #0a3474;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    nav::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    #toggle {
+        position: absolute;
+        width: 231px;
+        height: 73vh;
+        background: #FE935A;
+        left: -300px;
+        top: 0;
+        bottom: 0;
+        box-sizing: border-box;
+        padding: 100px 0 0 40px;
+        transition: all 0.4s ease;
+    }
+    #toggle.active {
+        left: 0;
+    }
+    .toggle-wrap {
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+        float: left;
+
+        /*disable selection*/
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .toggle-bar,
+    .toggle-bar::before,
+    .toggle-bar::after,
+    .toggle-wrap.active .toggle-bar,
+    .toggle-wrap.active .toggle-bar::before,
+    .toggle-wrap.active .toggle-bar::after {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    .toggle-bar {
+        width: 38px;
+        margin: 10px 0;
+        position: relative;
+        border-top: 6px solid #fff9eb;
+        display: block;
+    }
+    .toggle-bar::before,
+    .toggle-bar::after {
+        content: "";
+        display: block;
+        background: #fff9eb;
+        height: 6px;
+        width: 38px;
+        position: absolute;
+        top: -16px;
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -ms-transform-origin: 13%;
+        -webkit-transform-origin: 13%;
+        transform-origin: 13%;
+    }
+    .toggle-bar::after {
+        top: 4px;
+    }
+    .toggle-wrap.active .toggle-bar {
+        border-top: 6px solid transparent;
+    }
+    .toggle-wrap.active .toggle-bar::before {
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .toggle-wrap.active .toggle-bar::after {
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .toggle-wrap.active .toggle-bar {
+        width: 29px;
+    }
+    .header-menu ul li a{
+        color: #fff;
+    }
+    .header-menu ul{
+        flex-direction: column;
+        justify-content: flex-start
+    }
+    .header-menu ul li{
+        padding: 15px 0;
+    }
+    header::before{
+        display: none;
+    }
+    .header-logo{
+        order: 1;
+    }
+    .header-button{
+        order: 2;
+    }
+}
+@media screen and (max-width:1023px){
+    .heading h2 {
+        font-size: 30px;
+        padding-bottom: 16px;
+    }
+    .heading p {
+        font-size: 16px;
+        max-width: 583px;
+        line-height: 1.5;
+    }
+    .banner-section {
+        padding: 165px 0px 118px;
+    }
+    .banner-content {
+        width: 80%;
+    }
+    .banner-content h3 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .banner-content p {
+        font-size: 18px;
+        line-height: 32px;
+        padding: 15px 78px 40px 0px;
+    }
+    .our-approach-section {
+        padding: 50px 0 40px 0;
+    }
+    .approach-content{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .approach-content-left, .approach-content-right{
+        width: 100%;
+    }
+    .approach-content-left h3 {
+        font-size: 32px;
+        line-height: 1.5;
+        padding: 0 113px 25px 113px;
+    }
+    .approach-content-left h4 {
+        padding: 15px 0 0 0;
+    }
+    .our-service-section, .some-brands-section, .development-section, .technology-section, .solution-section, .customer-section{
+        padding: 55px 0 70px 0;
+    }
+    .service-info-ilst-top {
+        gap: 10px;
+        padding: 47px 0 80px 0;
+    }
+    .service-info-ilst-bottom {
+        padding: 0 120px;
+    }
+    .serivce-box-image{
+        right: 16px;
+    }
+    .some-brands-list, .tabs-stage{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .development-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .development-list-box {
+        padding: 40px 0;
+    }
+    .development-box-heading {
+        padding-bottom: 16px;
+    }
+    .technolog-menu ul {
+        gap: 45px !important;
+    }
+    .technolog-menu ul li a {
+        font-size: 20px;
+    }
+    .solution-info-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+    .customer-section-info {
+        padding-top: 30px;
+        gap: 20px;
+    }
+    .customer-content-left-img img {
+        width: 100%;
+    }
+    .customer-content-right h3 {
+        font-size: 30px;
+        padding: 0 44px 0 0;
+    }
+    .customer-content-right p {
+        padding: 10px 15px 0 0;
+    }
+    .footer-section {
+        padding: 63px 0 60px 0;
+    }
+    .footer-details {
+        width: 100%;
+        padding-bottom: 35px;
+        text-align: center;
+    }
+    .footer-details p {
+        padding: 0px 0px 25px 0;
+    }
+    .footer-details-newsletter a{
+        left: 498px;
+    }
+    .footer-menu {
+        width: 50%;
+        text-align: center;
+    }
+    .footer-blog {
+        width: 50%;
+    }
+    .footer-blog-content p{
+        padding-right: 105px;
+    }
+    .copyright-info{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:767px) {
+    .heading h2{
+        line-height: 30px;
+    }
+    .header-button{
+        display: none;
+    }
+    .banner-section {
+        padding: 135px 0px 78px;
+    }
+    .banner-content {
+        width: 100%;
+    }
+    .banner-content h3 {
+        font-size: 40px;
+        line-height: normal;
+    }
+    .banner-content p {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 10px 48px 30px 0px;
+    }
+    .header-button a, .banner-button a, .approach-content-button a, .consultant-expert-button a {
+        font-size: 16px;
+        padding: 20.5px 15.7px;
+    }
+    .banner-button a:last-child{
+        padding: 20.5px 8.5px;
+    }
+    .our-approach-section {
+        padding: 40px 0 40px 0;
+    }
+    .approach-content{
+        margin-top: 30px;
+    }
+    .approach-content-left h3 {
+        font-size: 27px;
+        padding: 0 0px 20px 0;
+    }
+    .approach-content-left h4{
+        padding: 10px 0 0 0;
+    }
+    .approach-content-button a{
+        padding: 5px 15.7px;
+    }
+    .approach-content-right {
+        padding: 30px 25px;
+    }
+    .consultant-expert-content h3 {
+        font-size: 22px;
+        padding: 10px 0 15px 0;
+    }
+    .our-service-section, .some-brands-section, .development-section, .technology-section, .solution-section, .customer-section {
+        padding: 45px 0 60px 0;
+    }
+    .service-info-ilst-top, .service-info-ilst-bottom{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+        padding: 47px 0 60px 0;
+    }
+    .service-info-ilst-bottom{
+        padding: 0;
+    }
+    .some-brands-list{
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .technolog-menu ul li a{
+        padding-bottom: 0px;
+    }
+    .technolog-menu ul {
+        flex-direction: column;
+        padding: 15px 0 32px 0;
+        gap: 20px !important;
+    }
+    .tabs-stage{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .solution-info-list{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .customer-section-info {
+        flex-direction: column;
+    }
+    .customer-content-left, .customer-content-right{
+        width: 100%;
+    }
+    .customer-content-right h3 {
+        padding: 0 162px 0 0;
+        font-size: 25px;
+    }
+    .footer-section {
+        padding: 53px 0 40px 0;
+    }    
+    .footer-details-newsletter a{
+        left: 326px;
+    }
+    .footer-blog-content p {
+        padding-right: 45px;
+    }
+    .copyright-email a {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:424px) {
+    .banner-section {
+        padding: 125px 0px 58px;
+    }
+    .banner-content h3 {
+        font-size: 30px;
+    }
+    .approach-content-left h3{
+        font-size: 22px;
+    }
+    .approach-content-button a {
+        padding: 5px 15.7px;
+    }
+    .approach-content-right{
+        padding: 20px 15px
+    }
+    .approach-content-right-line{
+        gap: 8px;
+    }
+    .consultant-expert-content h3 {
+        font-size: 20px;
+    }
+    .consultant-expert-button a {
+        padding: 15.5px 15.7px;
+    }
+    .tabs-stage {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .customer-content-right h3 {
+        padding: 0 130px 0 0;
+    }
+    .footer-details-newsletter input {
+        padding: 16px 133px 16px 25px;
+    }
+    .footer-details-newsletter a {
+        left: 287px;
+        padding: 15.5px 17px;
+    }
+    .copyright-email a {
+        padding: 0 4px;
+    }    
+}         
+@media screen and (max-width:374px) {
+    .consultant-expert-content h3 {
+        font-size: 17px;
+    }
+    .customer-content-right h3 {
+        padding: 0 75px 0 0;
+    }
+    .footer-details-newsletter input {
+        padding: 16px 90px 16px 25px;
+    }
+    .footer-details-newsletter a {
+        left: 238px;
+        padding: 15.5px 17px;
+    }
+}
